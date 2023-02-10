@@ -1,0 +1,35 @@
+img{
+    position:absolute;
+    left: 30%;
+    top:20%;
+}
+body{
+    background-image:url("bg2.jpg");
+}
+#b{
+    position:absolute;
+    left: 32%;
+    top:70%;
+}
+#c{
+    position:absolute;
+    left: 52%;
+    top:70%;
+}
+a{
+    background-color: brown;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 25px;
+    font-family: cursive;
+}
+h1{
+    position:absolute;
+    left: 30%;
+ top: 5%; 
+ font-size:40px;
+ left: 40%;
+ background-image: linear-gradient(-225deg, #CE2029 0%, #D84528 8%, #E26928 16%, #EB8E27 32%, #F5B227 48%,#FFD726 64%,#CE2029 80%,#F5B227 96%);
+}
