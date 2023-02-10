@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("./images/bg4.webp");
+}
+
+#board {
+    width: 400px;
+    height: 300px;
+    border: 2px solid purple;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 98px;
+    height: 98px;
+    border: 0.5px solid lightblue;
+}
+
+
+#pieces {
+    width: 600px;
+    height: 200px;
+    border: 2px solid purple;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#pieces img {
+    width: 98px;
+    height: 98px;
+    border: 0.5px solid lightblue;
+}

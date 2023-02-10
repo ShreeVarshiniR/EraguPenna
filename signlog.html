@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>தமிழ்</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form method="POST" action="signup.php">
+	<h1>உங்கள் கணக்கை துவங்குங்கள்</h1>
+	<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>அல்லது பதிவு செய்ய உங்கள் மின்னஞ்சலைப் பயன்படுத்தவும்</span>
+	<input type="text" name="name" placeholder="பெயர்">
+	<input type="email" name="email" placeholder="மின்னஞ்சல்">
+	<input type="password" name="password" placeholder="கடவுச்சொல்">
+	<button>பதிவு செய்யவும்</button>
+</form>
+</div>
+<div class="form-container sign-in-container">
+	<form action="signin.php">
+		<h1>உள்நுழைக</h1>
+		<div class="social-container">
+		<a href="#" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="social"><i class="fa fa-google"></i></a>
+		<a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>அல்லது உங்கள் கணக்கைப் பயன்படுத்தவும்</span>
+	<input type="email" name="email" placeholder="மின்னஞ்சல்">
+	<input type="password" name="password" placeholder="கடவுச்சொல்">
+	<a href="#">உங்கள் கடவுச்சொல்லை மறந்து விட்டீர்களா</a>
+
+	<button>உள்நுழைக</button>
+	</form>
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>மீண்டும் வருக!</h1>
+			<p>எங்களுடன் தொடர்ந்து இணைந்திருக்க உங்கள் தனிப்பட்ட தகவலுடன் உள்நுழையவும்</p>
+			<button class="ghost" id="signIn">உள்நுழைக</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>வணக்கம்!</h1>
+			<p>உங்களின் விவரங்களை உள்ளிட்டு எங்களுடன் சேர்ந்து உங்கள் கற்றலைத் தொடங்குங்கள்</p>
+			<button class="ghost" id="signUp">உள்நுழைக</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
